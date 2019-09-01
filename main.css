@@ -330,6 +330,11 @@ section
   left: -110px;
 }
 
+/*Nearby on the homepage*/
+.nearby-card-img
+{
+  width: 10%;
+}
 
 
 /*---Responsive menu-----------*/
