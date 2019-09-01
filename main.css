@@ -16,8 +16,6 @@
   position: fixed;
   width: 100%;
   z-index: 3;
-  margin-bottom: 20vh;
-
 }
 
 .header ul {
@@ -126,16 +124,16 @@
 
   .header
   {
-    height: 18vh;
+    height: 21%;
   }
 section
 {
-  padding-top: 18vh;
+  padding-top: 10%;
 }
 
 section
 {
-  /*margin-top: 20vh;*/
+  /*margin-top: 20%;*/
 }
 .buttons{
   display:flex; flex-direction: row; justify-content: space-around;
@@ -164,7 +162,7 @@ section
 
 .menu-lists
 {
-  height: 10vh;
+  height: 10%;
   position: absolute;
   top: 50%;
   right: 3%;
@@ -212,13 +210,13 @@ section
 
 #dropdownMenuButton
 {
-  height: 5vh;
+  height: 5%;
 }
 
 .iteranary-form
 {
   position: absolute;
-  top: 4vh;
+  top: 4%;
   left: 70vw;
   float:right;
   z-index: 1;
@@ -228,14 +226,14 @@ section
 }
 
 .homeimageslider{
-  height: 80vh;
+  height: 80%;
   transition: 1s;
   overflow: hidden;
   
 }
 .mySlides 
 {
-  height: 100vh;
+  height: 100%;
 }
 
 
@@ -245,19 +243,21 @@ section
 }
 
 
+
+
 .list-tab
 {
-  height: 30vh;
+  height: 30%;
 }
 
 .event-tab
 {
-  height: 50vh;
+  height: 50%;
 }
 
 .eventdetailcard
 {
-  height: 30vh;
+  height: 30%;
   width: 20vw;
 }
 
@@ -319,7 +319,7 @@ section
 
 .floating-language
 {
-  height: 10vh;
+  height: 10%;
   position: absolute;
   top: 1%;
   right: 1%;
@@ -342,9 +342,13 @@ section
 /*Nearby on the homepage*/
 .nearby-card-img
 {
-  width: 10%;
+  width: 100%;
 }
 
+.nearbyboxclass
+{
+  width: 10%;
+}
 
 /*---Responsive menu-----------*/
 .topnav li:last-child
@@ -425,6 +429,6 @@ section
 /*iteranary form */
 .homeimageslider 
 {
-  height: 40vh;
+  height: 40%;
 }
 }
