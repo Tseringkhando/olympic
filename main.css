@@ -240,6 +240,7 @@ section
 .eventboxclass
 {
   margin-right: 2em;
+  width: 10%;
 }
 
 
@@ -356,6 +357,9 @@ section
 .nearbyboxclass
 {
   width: 10%;
+}
+.nearby-event-img{
+  width: 100%;
 }
 
 /*---Responsive menu-----------*/
