@@ -12,6 +12,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="script.js"></script>
+
 </head>
 <body>
 <header class="header " >
@@ -36,7 +38,7 @@
   	<li class="text-center">	
 			  <div class="search-box row">
 			  	<input type="text" placeholder="Search" class="search-topnav" >
-			     <div class="searchbtn">
+			     <div class="searchbtn"  onclick="clickSearch()">
 			       <i class="fa fa-search" aria-hidden="true"></i>
 			     </div>
 			     
@@ -52,6 +54,7 @@
 </header>
 <section class="events">
 	<h1 class="display-3" style="margin-top: 2%;">Events</h1>
+
 	<div class="box shadow p-3 mb-5 bg-white rounded events  eventdiv-tab" style="margin-top: 2%;">
 			<div class="box-header ">
 				

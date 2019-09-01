@@ -11,6 +11,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <header class="header" >
@@ -35,11 +36,9 @@
   	<li class="text-center">	
 			  <div class="search-box row">
 			  	<input type="text" placeholder="Search" class="search-topnav" >
-			     <div class="searchbtn">
+			     <div class="searchbtn" onclick="clickSearch()">
 			       <i class="fa fa-search" aria-hidden="true"></i>
 			     </div>
-			     
-
 				</div>
 			</li>
    <li class="text-center"><a href="index.html">Home</a></li>
@@ -273,37 +272,3 @@
   </div>
 </div>
 
-
-<script>
-// language fade on scroll
-$(window).on("scroll", function(e) {
-	if ($(window).scrollTop() >= $(".languages").height()) 
-		{
-			$(".languages").fadeOut();
-			// $(".menu-lists").css('top','unset');
-			$("header").css('height','13%');
-			$(".logoimage").css('height','13vh');
-
-		}
-	else {
-
-		$(".languages").fadeIn();
-		// $(".menu-lists").css('top','50%');
-		$("header").css('height','21%');
-		$(".logoimage").css('height','18vh');
-		
-
-	}
-
-});
-
-
-$(".searchbtn").click(function(){
-  $(".search-topnav").toggleClass("active").focus;
-  $(this).toggleClass("animate");
-  $(".search-topnav").val("");
-});
-
-
-
-</script>
