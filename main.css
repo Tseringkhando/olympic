@@ -250,7 +250,16 @@ section
   height: 30vh;
 }
 
+.event-tab
+{
+  height: 50vh;
+}
 
+.eventdetailcard
+{
+  height: 30vh;
+  width: 20vw;
+}
 
 /*search button*/
 
