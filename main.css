@@ -254,13 +254,21 @@ section
 {
   height: 50vh;
 }
-
+.eventdiv-tab
+{
+   height: 50vh;
+}
 .eventdetailcard
 {
   height: 30vh;
   width: 20vw;
 }
 
+.eventdivclass
+{
+  height: 30vh;
+  width: 20vw;
+}
 /*search button*/
 
 
