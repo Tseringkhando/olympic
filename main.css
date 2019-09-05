@@ -8,10 +8,10 @@
         color: #000;
       }
 
-section
+/*section
 {
   height: 90vh;
-}
+}*/
 
 footer{
   height: 10%;
@@ -246,11 +246,15 @@ section
   margin-right: 2em;
   width: 10%;
 }
-
+.visitboxclass
+{
+  margin-right: 2em;
+  width: 30%;
+}
 .archeryclass
 {
   margin-right: 2em;
-  width: 50%;
+  width: 40%;
 }
 
 
@@ -261,7 +265,7 @@ section
 
 .archery-tab
 {
-  height: 30%;
+  height: 20%;
 }
 .event-tab
 {
@@ -270,6 +274,10 @@ section
 .eventdiv-tab
 {
    height: 30%;
+}
+.visit-tab
+{
+  height: 30%;
 }
 .eventdetailcard
 {
@@ -374,7 +382,13 @@ section
 .nearby-event-img{
   width: 100%;
 }
-
+.nearby-visit-img{
+  width: 100%;
+}
+.nearby-archery-img
+{
+  width: 40%;
+}
 /*---Responsive menu-----------*/
 .topnav li:last-child
 {

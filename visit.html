@@ -5,64 +5,79 @@
 	 <!-- Font Awesome Icons -->
   	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfR%+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<header class="box shadow fixed-top" >
-		<div class="col-md-12 d-flex " style="height: 100%;">
-		<!-- <div class="box shadow p-3 mb-1 bg-white rounded col-md-12 d-flex flex-row"> -->
-		<div class="nav  col-md-2 "  >
-			<a href=""><img src="2020.jpg"></a>
-		</div>
+<header class="header" >
+ <a href=""><img src="2020.jpg" class="logoimage" ></a>
 
+  <div class="row languages" style="float: right;">
+			<div class="dropdown mr-3">
+			  <button class="btn-edit dropdown-toggle" ype="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa  fa-language"></i> </button>
 
-<!-- side nav and language bar and dp  -->
-	<div class="navbar col-md-10 " style="border-radius: 50px; background: unset;">
-		<div class=" ml-7 floating-language">
-			<!-- <div id="logo-div" class="rounded-circle "></div> -->
-			<p style="margin-bottom: 0;">Hi, User</p>
-			<div class="dropdown">
-			  <!-- <button class=" btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			    Select Language
-			  </button> -->
-			  	<button class="btn-edit dropdown-toggle" ype="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa  fa-language"></i> </button>
-
-			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			  <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
 			    <a class="dropdown-item" href="#">English</a>
 			    <a class="dropdown-item" href="#">japanese</a>
 			    <a class="dropdown-item" href="#">Korean</a>
 			    <a class="dropdown-item" href="#">Chinese</a>
 			  </div>
-			</div>
-		</div>
-		<ul class="row col-8 menu-lists" style="margin-right: 0; margin-bottom: 0; margin-left: 0">
-			<li class="navclass col "><p class="text-center"><a href="index.html">Home</a> </p></li>
-			<li class="navclass col"><a href="schedule.html" >Schedule</a></li>
-			<li class="navclass col"><a href="plan.html">My Plan</a></li>
-			<li class="navclass col "><a href="near.html">Nearby</a></li>
-			<li class="d-flex">	
-			<!-- <input type="text" name="search" id="search" class="form-control" placeholder="Search"> -->
-			  <div class="search-box">
-			     <div class="searchbtn">
+			</div> <p style="margin-bottom: 0;">Hi, User</p>
+			
+	</div>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"> <i class="fa fa-bars" style="font-size: 1.5em"></i></label>
+  <ul class="menu">
+  	<li class="text-center">	
+			  <div class="search-box row">
+			  	<input type="text" placeholder="Search" class="search-topnav" >
+			     <div class="searchbtn" onclick="clickSearch()">
 			       <i class="fa fa-search" aria-hidden="true"></i>
 			     </div>
-			     <input type="text" placeholder="Search" class="input">
-
-			</div>
+				</div>
 			</li>
-
-		</ul>
-	</div>
-
-
-</div>
+   <li class="text-center"><a href="index.html">Home</a></li>
+			<li class="text-center"><a href="schedule.html" >Schedule</a></li>
+			<li class="text-center"><a href="plan.html">My Plan</a></li>
+			<li class=" text-center"><a href="near.html">Nearby</a></li>
+			
+  </ul>
 </header>
+<section>
+	<h1 class="display-3" style="margin-top: 2%;">Places to visit</h1>
+	<!-- upcoming events -->
+		<div class="box shadow p-3 mb-5 bg-white rounded events  visit-tab">
+			<div class="box-body   d-flex flex-row justify-content-between">
+			<div class="card visitboxclass">
+				<img class=" nearby-visit-img" src="images.jpg" alt="Card image ">
+				<!-- <div class="card-body "> -->
+				<!-- </div> -->
+
+				<div class="card-footer">
+					do visit
+				</div>
+			</div>
+			<!-- next card -->
+			<div class="card visitboxclass">
+					<img class=" nearby-visit-img" src="images.jpg" alt="Card image ">
+				<div class="card-footer">
+					do visit
+				</div>
+			</div>
+			<div class="card visitboxclass">
+					<img class=" nearby-visit-img" src="images.jpg" alt="Card image ">
+				<div class="card-footer">
+					do visit
+				</div>
+			</div>
+			</div>
+		</div>
+</section>
 
 <!-- FOOTER -->
 		 <footer>
