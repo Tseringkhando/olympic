@@ -243,7 +243,11 @@ section
   width: 10%;
 }
 
-
+.archeryclass
+{
+  margin-right: 2em;
+  width: 50%;
+}
 
 
 .list-tab
@@ -251,13 +255,17 @@ section
   height: 30%;
 }
 
+.archery-tab
+{
+  height: 30%;
+}
 .event-tab
 {
   height: 50%;
 }
 .eventdiv-tab
 {
-   height: 50vh;
+   height: 30%;
 }
 .eventdetailcard
 {
@@ -267,8 +275,8 @@ section
 
 .eventdivclass
 {
-  height: 30vh;
-  width: 20vw;
+  height: 10vh;
+  width: 10vw;
 }
 /*search button*/
 
