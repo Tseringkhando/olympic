@@ -1,4 +1,6 @@
   body {
+    width: 100%;
+    height: 100%;
       margin: 0;
       font-family: Helvetica, sans-serif;
       background-color: #f4f4f4;
@@ -8,17 +10,13 @@
         color: #000;
       }
 
-/*section
-{
-<<<<<<< HEAD
-  height: 90vh;
-}*/
-
-  /*height: 90vh;*/
-
-
 footer{
   height: 10%;
+  padding: 2.5rem 0;
+  color: #7b7b7b;
+  text-align: center;
+  background-color: #d0d0d0;
+  border-top: .05rem solid #e5e5e5;
 }
 /* header */
 
@@ -143,12 +141,9 @@ footer{
 section
 {
   padding-top: 8%;
+  
 }
 
-section
-{
-  /*margin-top: 20%;*/
-}
 .buttons{
   display:flex; flex-direction: row; justify-content: space-around;
   width: 6%;
