@@ -11,8 +11,8 @@ $(window).on("scroll", function(e) {
 			$(".languages").fadeOut();
 			// $(".menu-lists").css('top','unset');
 			
-			$(".logoimage").css('height','13vh');
-			$("header").css('height','13%');
+			$(".logoimage").css('height','85%');
+			$("header").css('height','15%');
 
 		}
 	else {
