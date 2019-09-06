@@ -433,7 +433,7 @@ section
 /*responsive*/
 /* 48em = 768px */
 
-@media (min-width:1040 px) {
+@media (min-width:1040px) {
 
   .header
   {
