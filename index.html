@@ -51,7 +51,7 @@
   </ul>
 
 </header>
-<section class="picandform" style="height: 75%">
+<section class="picandform" >
 <!-- carousel -->
 <div id="carouselExampleIndicators" class="carousel slide homeimageslider" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -78,37 +78,37 @@
   </a>
 
 
-		<div class="col-md-3 card iteranary-form mt-3" style=" background-color: rgba(255, 255, 255, 0.5); ">
-			<form>
-				<div class="card-header">
-			    Iteranary-Form
-				</div>
-				<div class="card-body">
+			<!-- <div class="col-md-3 card iteranary-form mt-3" style=" background-color: rgba(255, 255, 255, 0.5); ">
+				<form>
+					<div class="card-header">
+				    Iteranary-Form
+					</div>
+					<div class="card-body">
+					
+					
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputPassword1">Password</label>
+					    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+					  <div class="form-group form-check">
+					    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+					  </div>
 				
-				
-				  <div class="form-group">
-				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				  </div>
-				  <div class="form-group">
-				    <label for="exampleInputPassword1">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-				  </div>
-				  <div class="form-group form-check">
-				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-				  </div>
-			
-			  <div class="card-footer">
-			  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-			  	 Submit
-				</button>
-			  	  </div>
+				  <div class="card-footer">
+				  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				  	 Submit
+					</button>
+				  	  </div>
 
 
-			  </div>
-			</form>
-		 </div>
+				  </div>
+				</form>
+			 </div> -->
 </div>
 	
 		<!-- upcoming events -->
@@ -117,16 +117,19 @@
 				<h5><a href="events.html">Events</a></h5>
 			</div>
 			<div class="box-body   d-flex flex-row">
-			<div class="card eventboxclass">
-			<a href="Archery.html">
-				<img class=" nearby-event-img" src="archery.jpg" alt="Card image ">
+
+				<div class="card-deck">
+			<div class="card ">
+			<a href="">
+				<img class=" nearby-event-img" src="event.jpg" alt="Card image ">
+
 				<div class="card-footer">
 					Archery
 				</div>
 			</a>
 			</div>
 			<!-- next card -->
-			<div class="card eventboxclass">
+			<div class="card ">
 				<a href="">
 				<img class=" nearby-event-img" src="event.jpg" alt="Card image ">
 				<div class="card-footer">
@@ -134,6 +137,8 @@
 				</div>
 			</a>
 			</div>
+			</div>
+
 			</div>
 		</div>
 		<!-- upcoming events ends here -->
@@ -146,8 +151,10 @@
 			</div>
 			<div class="box-body   d-flex flex-row">
 				<!-- list -->
-			<div class="card eventboxclass">
-				<a href="insideplaces.html">
+
+			<div class="card-deck">
+			<div class="card ">
+				<a href="">
 					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
 					  <div class="card-header">
 						abc
@@ -157,7 +164,7 @@
 			
 			</div>
 			<!-- next card -->
-			<div class="card eventboxclass">
+			<div class="card ">
 					<a href="">
 					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
 					  <div class="card-header">
@@ -166,6 +173,7 @@
 				</a>
 			</div>
 			</div>
+		</div>
 		</div>
 		<!-- places near ends here -->
 
@@ -178,9 +186,10 @@
 				<!-- list -->
 
 			<!-- next card -->
-				<div class="card eventboxclass nearbyboxclass">
+			<div class="card-deck">
+				<div class="card">
 				<a href="hotels.html">
-					 <img class=" nearby-card-img" src="hotels.jpg" alt="Card image cap">
+					 <img class="nearby-card-img" src="hotels.jpg" alt="Card image cap">
 					  <div class="card-header">
 						HOTELS
 					</div>
@@ -190,7 +199,7 @@
 			</div>
 
 			<!-- next card -->
-				<div class="card eventboxclass nearbyboxclass">
+				<div class="card">
 				<a href="">
 					 <img class="nearby-card-img" src="hotels.jpg" alt="Card image cap">
 					  <div class="card-header">
@@ -199,6 +208,7 @@
 					  
 				</a>
 			
+			</div>
 			</div>
 			</div>
 		</div>
