@@ -1,6 +1,6 @@
   body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
       margin: 0;
       font-family: Helvetica, sans-serif;
       background-color: #f4f4f4;
@@ -142,6 +142,10 @@ section
 {
   padding-top: 8%;
   
+}
+
+.container-body{
+  height: 80vh;
 }
 
 .buttons{
@@ -419,11 +423,17 @@ section
 
 }
 
+/*overwriting bootstrap css*/
+.card
+{
+  overflow: hidden;
+  word-wrap: unset;
 
+}
 /*responsive*/
 /* 48em = 768px */
 
-@media (min-width:900px) {
+@media (min-width:1040 px) {
 
   .header
   {
@@ -500,6 +510,7 @@ section
   padding-left: unset;
 }
 
+
 /*1280 px*/
 @media (min-width:1280px) {
   .homeimageslider
@@ -526,4 +537,19 @@ section
     .hide-text{
       overflow: hidden;
     }
+}
+
+
+/*mobile*/
+
+@media (max-width: 570px) {
+  .d-flex
+  {
+    display: block!important;
+  }
+
+  .display-3
+  {
+    margin-top: 25%;
+  }
 }
