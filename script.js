@@ -8,7 +8,7 @@ function clickSearch() {
 $(window).on("scroll", function(e) {
 	if ($(window).scrollTop() >= $(".languages").height()) 
 		{
-			$(".languages").fadeOut();
+			$(".languages").css('opacity','0');
 			// $(".menu-lists").css('top','unset');
 			
 			$(".logoimage").css('height','85%');
@@ -17,7 +17,7 @@ $(window).on("scroll", function(e) {
 		}
 	else {
 
-		$(".languages").fadeIn();
+		$(".languages").css('opacity','1');
 		// $(".menu-lists").css('top','50%');
 		$("header").css('height','15%');
 		$(".logoimage").css('height','85%');
