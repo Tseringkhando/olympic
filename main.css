@@ -44,13 +44,19 @@ footer{
   text-decoration: none;
 }
 
-.header li a:hover,
+.header ul li:hover,
 .header .menu-btn:hover {
-  /*background-color: #f4f4f4;*/
-  border-bottom: 1px outset #000;
-   transition: 1.2s;
+   border-bottom: 1.6px outset #000;
+   transition: 0.6s;
+   padding-bottom: 2%;
+
 }
 
+.header .search-icon:hover
+{
+  border-bottom: none;
+   padding-bottom:unset;
+}
 .header .logo {
   display: block;
   float: left;
@@ -119,14 +125,13 @@ footer{
 }
 .header .menu-btn:checked ~ .menu {
   background: #fff;
-  margin-top: -10px;
+  margin-top: 10px;
   max-height: unset;
   width: 100%;
-  /*overflow-y: scroll;*/
 }
 
 .header .menu-btn:checked ~ .languages {
- margin-top: -40%;
+ margin-top: -30%;
  }
 
  
@@ -346,7 +351,7 @@ section
   text-align: center;
   line-height: 35px;
   font-size:20px;
-  color:rgba(84, 140, 232, 0.34);
+  color:#000;
   transition: all 0.8s ease;
 }
 
@@ -407,6 +412,10 @@ section
 }
 
 @media screen and (max-width: 768px) {
+
+  .header .menu-btn:checked ~ .languages {
+ margin-top: -45%!important;
+ }
   .topnav li:not(:last-child)  {display: none;}
   .topnav li:last-child {
     float: right;
@@ -417,10 +426,11 @@ section
 .search-box {
   /*margin-left: 45%;*/
 }
-     .header li a:hover,
+     .header ul li:hover,
 .header .menu-btn:hover {
   /*background-color: #f4f4f4;*/
   border-bottom: none;
+  padding-bottom: 0;
 }
 
   .topnav.responsive {position: relative;}
@@ -502,7 +512,7 @@ section
   .search-topnav {
       opacity: 1;
     }
-    
+
   .languages
   {
     margin-top: -10%;
@@ -548,10 +558,10 @@ section
      border: 1px solid #ababab;
      border-radius: 9px 9px;
     }
-       .header li a:hover,
+       .header ul li:hover,
   .header .menu-btn:hover {
-    /*background-color: #f4f4f4;*/
-    border-bottom: none;
+     border-bottom: none;
+  padding-bottom: 0;
   }
 
   
@@ -608,4 +618,8 @@ section
   {
     margin-top: 25%;
   }
+
+  .header .menu-btn:checked ~ .languages {
+ margin-top: -60%!important;
+ }
 }
