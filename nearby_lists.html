@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OLYMPIC PLANNER</title>
+  	<!-- title to be sent -->
+    <title>Place name comes here</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -31,17 +32,17 @@
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html" style="width: 30%!important;"><img src="images/2020.png" class="logoimage" style=" width:40%;"></a>
+       <a class="navbar-brand" href="index.html" style="width: 30%!important;"><img src="images/2020.png" class="logoimage" style=" width:40%;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
+    <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="events.html" class="nav-link">Schedule</a></li>
           <li class="nav-item"><a class="nav-link" href="visit.html">My Plan</a></li>
-          <li class="nav-item active"><a href="nearby.html" class="nav-link">Nearby</a></li>
+          <li class="nav-item"><a href="nearby.html" class="nav-link">Nearby</a></li>
           
           <li class="nav-item cta"><span>
             <select class="form-control" style="background: #1222778f!important; border-radius: 50px!important; color: #fff!important;">
@@ -55,9 +56,10 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/fuji.jpg');">
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');">
       <div class="overlay"></div>
       <div class="container">
+
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Explore <br></strong> your amazing city</h1>
@@ -86,27 +88,123 @@
       </div>
     </div>
 
-    <section class="ftco-section bg-light">
+
+    <section class="ftco-section ftco-degree-bg">
       <div class="container">
-      	<p class="display-4">Nearby</p>
-        <div class="row d-flex">
-          <div class="item col-md-3 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="nearby_lists.html" class="block-20" style="background-image: url('images/hotel-1.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<span class="tag">Hotels</span>
-                <h3 class="heading mt-3"><a href="nearby_lists.html">Hotels near you</a></h3>
-              </div>
-            </div>
+      		<!-- dynamic titles -->
+      	<p class="display-4">Hotels</p>
+        <div class="row">
+        	<div class="col-lg-3 sidebar">
+        		<div class="sidebar-wrap bg-light ftco-animate">
+        			<h3 class="heading mb-4">Find City</h3>
+        			<form action="#">
+        				<div class="fields">
+		              <div class="form-group">
+		                <input type="text" class="form-control" placeholder="Destination, City">
+		              </div>
+		              <div class="form-group">
+		                <div class="select-wrap one-third">
+	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                    <select name="" id="" class="form-control" placeholder="Keyword search">
+	                      <option value="">Select Location</option>
+	                      <option value="">San Francisco USA</option>
+	                      <option value="">Berlin Germany</option>
+	                      <option value="">Lodon United Kingdom</option>
+	                      <option value="">Paris Italy</option>
+	                    </select>
+	                  </div>
+		              </div>
+		              <div class="form-group">
+		                <input type="text" id="checkin_date" class="form-control" placeholder="Date from">
+		              </div>
+		              <div class="form-group">
+		                <input type="text" id="checkin_date" class="form-control" placeholder="Date to">
+		              </div>
+		              <div class="form-group">
+		              	<div class="range-slider">
+		              		<span>
+							    <input type="number" value="25000" min="0" max="120000"/>	-
+							    <input type="number" value="50000" min="0" max="120000"/>
+							  </span>
+							  <input value="1000" min="0" max="120000" step="500" type="range"/>
+							  <input value="50000" min="0" max="120000" step="500" type="range"/>
+							  
+							</div>
+		              </div>
+		              <div class="form-group">
+		                <input type="submit" value="Search" class="btn btn-primary py-3 px-5">
+		              </div>
+		            </div>
+	            </form>
+        		</div>
           </div>
-       
+          <div class="col-lg-9">
+          	<div class="row">
+          		
+		    			
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<div href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-5.jpg);" data-dismiss="modal" aria-label="Close">
+
+		    						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailModal">
+  Details
+</button>	
+		    					</div>
+
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="">Hotel, Italy</a></h3>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price">$40<small>/night</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Far far away, behind the word mountains, far from the countries</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i> Miami, Fl</span> 
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+          	</div>
+        
+          </div> <!-- .col-md-8 -->
         </div>
-       
       </div>
-    </section>
+    </section> <!-- .section -->
+
+<!-- Modal pops up with details and pictures -->
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Hotel title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	
+      <img style="width: 100%" src="images/hotel-5.jpg">
+      	<div class="text p-3">
+			<h4>Hotel Name</h4>
+			<span class="listing"></span>
+			<p>Details</p>
+		</div>
+      </div>
+	   
+      <div class="modal-footer">
+      	<p>Location</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal ends here -->
 
 
+<!-- footer starts -->
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         
@@ -119,6 +217,7 @@
         </div>
       </div>
     </footer>
+    <!--  footer ends-->
     
   
 
