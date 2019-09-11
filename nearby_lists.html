@@ -144,9 +144,13 @@
 		    			
 		    			<div class="col-md-4 ftco-animate">
 		    				<div class="destination">
-		    					<a href="hotel-single.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-5.jpg);">
-		    						
-		    					</a>
+		    					<div href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-5.jpg);" data-dismiss="modal" aria-label="Close">
+
+		    						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailModal">
+  Details
+</button>	
+		    					</div>
+
 		    					<div class="text p-3">
 		    						<div class="d-flex">
 		    							<div class="one">
@@ -164,13 +168,40 @@
 		    					</div>
 		    				</div>
 		    			</div>
-		    			
           	</div>
         
           </div> <!-- .col-md-8 -->
         </div>
       </div>
     </section> <!-- .section -->
+
+<!-- Modal pops up with details and pictures -->
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Hotel title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	
+      <img style="width: 100%" src="images/hotel-5.jpg">
+      	<div class="text p-3">
+			<h4>Hotel Name</h4>
+			<span class="listing"></span>
+			<p>Details</p>
+		</div>
+      </div>
+	   
+      <div class="modal-footer">
+      	<p>Location</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal ends here -->
 
 
 <!-- footer starts -->
