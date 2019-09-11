@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OLYMPIC PLANNER</title>
+    <!-- title to be sent -->
+    <title>Places to Visit</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -31,14 +32,14 @@
     
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="index.html" style="width: 30%!important;"><img src="images/2020.png" class="logoimage" style=" width:40%;"></a>
+       <a class="navbar-brand" href="index.html" style="width: 30%!important;"><img src="images/2020.png" class="logoimage" style=" width:40%;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
       </button>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
+    <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="events.html" class="nav-link">Schedule</a></li>
           <li class="nav-item"><a class="nav-link" href="visit.html">My Plan</a></li>
           <li class="nav-item"><a href="nearby.html" class="nav-link">Nearby</a></li>
@@ -55,9 +56,10 @@
   </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap js-fullheight" style="background-image: url('images/fuji.jpg');">
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');">
       <div class="overlay"></div>
       <div class="container">
+
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Explore <br></strong> your amazing city</h1>
@@ -66,7 +68,7 @@
               <form action="" method="post" class="d-block d-flex">
                 <div class="fields d-block d-flex">
                   <div class="textfield-search one-third">
-                  	<input type="text" class="form-control" placeholder="Ex: events, stadium">
+                    <input type="text" class="form-control" placeholder="Ex: events, stadium">
                   </div>
                   <div class="select-wrap one-third">
                     <div class="icon"><span class="ion-ios-arrow-down"></span></div>
@@ -86,74 +88,75 @@
       </div>
     </div>
 
-    <section class="ftco-section bg-light">
+
+    <section class="ftco-section ftco-degree-bg">
       <div class="container">
-      	<p class="display-4">Places to visit</p>
-        <div class="row d-flex">
-          <div class="item col-md-3 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/hotel-1.jpg');">
-              </a>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-           do visit
-        </button>
-           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+          <!-- dynamic titles -->
+        <p class="display-4">PLACES</p>
+        
+          <div class="col-lg-9">
+            <div class="row">
+              
+              
+              <div class="col-md-4 ftco-animate">
+                <div class="destination">
+                  <div href="#" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/visit.jpg);" data-dismiss="modal" aria-label="Close">
+
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detailModal">
+  Details
+</button> 
+                  </div>
+
+                  <div class="text p-3">
+                    <div class="d-flex">
+                      <div class="one">
+                        <h3><a href="">name of the place</a></h3>
+                      </div>
+                      <div class="two">
+                        <p>location</p>
+                      </div>
+                    </div>
+                    <p>short description</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </div> <!-- .col-md-8 -->
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+<!-- Modal pops up with details and pictures -->
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">name of picture</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Beauty near you</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-
-    <p class="h4 mb-4">beauty near you</p>
-    kms far
-    <div class="d-flex justify-content-around">
+        
+      <img style="width: 100%" src="images/visit.jpg">
+        <div class="text p-3">
+      <h4>Place Name</h4>
+      <span class="listing"></span>
+      <p>Details</p>
     </div>
+      </div>
+     
+      <div class="modal-footer">
+        <p>Location</p>
       </div>
     </div>
   </div>
 </div>
-            
-        
-      </div>
-
-           <div class="item col-md-3 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/hotel-1.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<span class="tag">Hospitals</span>
-                <h3 class="heading mt-3"><a href="#">Hospitals near you</a></h3>
-              
-              </div>
-            </div>
-          </div>
+<!-- modal ends here -->
 
 
-           <div class="item col-md-3 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/hotel-1.jpg');">
-              </a>
-              <div class="text p-4 d-block">
-              	<span class="tag">Subway</span>
-                <h3 class="heading mt-3"><a href="#">Subways near you</a></h3>
-              
-              </div>
-            </div>
-          </div>
-        
-         
-       
-        </div>
-       
-      </div>
-    </section>
-
-
+<!-- footer starts -->
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         
@@ -166,6 +169,7 @@
         </div>
       </div>
     </footer>
+    <!--  footer ends-->
     
   
 
@@ -193,112 +197,3 @@
     
   </body>
 </html>
-<section>
-	<h1 class="display-3" style="margin-top: 2%;">Places to visit</h1>
-	<!-- upcoming events -->
-		<div class="box shadow p-3 mb-5 bg-white rounded events  visit-tab">
-			<div class="box-body   d-flex flex-row justify-content-between">
-			<div class="card visitboxclass">
-				<a href="">
-					 <img class="nearby-visit-img" src="images.jpg" alt="Card image "></a>
-					  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-			  	 do visit
-				</button>
-					 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      	<h5 class="modal-title" id="exampleModalLabel">name of picture</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-
-    <p class="h4 mb-4">beauty near you</p>
-    kms far
-    <div class="d-flex justify-content-around">
-    </div>
-      </div>
-    </div>
-  </div>
-</div>
-					  
-				
-			</div>
-			<!-- next card -->
-			<div class="card visitboxclass">
-				<a href="">
-					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-					  <div class="card-header">
-						do visit
-					</div>
-					  
-				</a>
-			</div>
-			<div class="card visitboxclass">
-				<a href="">
-					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-					  <div class="card-header">
-						do visit
-					</div>
-					  
-				</a>
-			</div>
-			</div>
-		</div>
-
-		<div class="box shadow p-3 mb-5 bg-white rounded events  visit-tab">
-			<div class="box-body   d-flex flex-row justify-content-between">
-			<div class="card visitboxclass">
-				<a href="">
-					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-					  <div class="card-header">
-						do visit
-					</div>
-					  
-				</a>
-			</div>
-			<!-- next card -->
-			<div class="card visitboxclass">
-					<a href="">
-					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-					  <div class="card-header">
-						do visit
-					</div>
-					  
-				</a>
-			</div>
-			<div class="card visitboxclass">
-				<a href="">
-					 <img class="nearby-visit-img" src="images.jpg" alt="Card image ">
-					  <div class="card-header">
-						do visit
-					</div>
-					  
-				
-			</div>
-			</div>
-		</div>
-</section>
-
-<!-- FOOTER -->
-		 <footer>
-		 	<div class=" box footer text-center">
-		 		abc
-		 	</div>
-		 </footer>
-		<!-- FOOTER ENDS -->
-
-
-
-
-
-
-
-
-
-
-
-
