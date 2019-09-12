@@ -4,16 +4,6 @@
     <title>OLYMPIC PLANNER</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- \ -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!--  -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -30,6 +20,7 @@
 
     <link rel="stylesheet" href="css/ionicons.min.css">
 
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
@@ -38,8 +29,11 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
+
+
   <body>
-    
+<!-- NAV starts  -->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
       <a class="navbar-brand" href="index.html" style="width: 20%!important;"><img src="images/2020.png" class="logoimage" style=" width:50%;"></a>
@@ -60,21 +54,25 @@
             <option>Select Language</option>
             <option value="">English</option>
             <option>Japanese</option>
-          </select></span></li>
+          </select></span>
+        </li>
         </ul>
       </div>
     </div>
   </nav>
     <!-- END nav -->
     
+<!-- header image section -->
     <div class="hero-wrap js-fullheight" style="background-image: url('images/fuji.jpg');">
       <div class="overlay"></div>
       <div class="container">
          <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-9 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-          <!-- itinerary --> <button class="btn btn-danger" data-toggle="modal" data-target="#itineraryModal"> Create a plan</button> 
+          <!-- itinerary --> 
+            <button class="btn btn-danger" data-toggle="modal" data-target="#itineraryModal"> Create a plan</button> 
 
-           <!-- sign in --> <button class="btn btn-warning" data-toggle="modal" data-target="#signinModal">Sign In</button> 
+           <!-- sign in --> 
+            <button class="btn btn-warning" data-toggle="modal" data-target="#signinModal">Sign In</button> 
 
             <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><strong>Hi,</strong> User <br> </h1>
             <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Stay updated with the Olympics. </p>
@@ -90,14 +88,12 @@
                       <option value="">Where</option>
                       <option value="">Tokyo</option>
                       <option value="">Hiroshima</option>
-                      
                     </select>
                   </div>
                 </div>
                 <input type="submit" class="search-submit btn btn-primary" value="Search">  
               </form>            
             </div>
-          
           </div>
         </div>
       </div>
